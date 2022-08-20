@@ -1,0 +1,55 @@
+Uses Localstorage , React app
+
+Open Terminal - npx create-react-app contact-app
+
+in public folder- delete all stuff just retain (index.html, favicon.ico)
+
+in src folder- delete all stuff just retain (app.js, app.css, index.js)
+
+now make our own folder structure:
+make component folder- move app.js, app.css file in component folder (all our component will be here)
+create header.js, contactCard.js etc components
+
+
+
+remove all the text inside return in app.js
+return <div>Hello</div>
+save file
+
+Hello should be displayed..
+
+for css we will use semantic UI
+add semantic ui css link to index.html file
+remove manifest tag
+
+
+now import React from react and all our component in app.js
+
+now return our components 
+
+in header.js create function component, now export this file (export default Header)
+
+in add contact.js create class component, 
+
+
+if we want to pass data from parent to child we use props, if we want to pass something from child to parent we pass a function as a prop.
+
+whenever the value changes, use effect help us to render it again.
+
+
+after localstorag work is done-
+
+npm i uuidv4 (it will give unique id for each contact).
+
+
+
+all functionality working now..
+
+but it is all on same url , we need different
+React router is used for different routs
+
+npm install react-router-dom --save
+
+in app.js :
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+
